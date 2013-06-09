@@ -1,0 +1,63 @@
+img {
+  border: 0px;
+}
+
+.clear {
+  clear: both;
+  height: 0px;
+}
+
+.comment {
+  vertical-align: top;
+}
+
+.commentInfo {
+  vertical-align: top;
+}
+
+
+.commentText {
+  padding-left: 95px;
+  min-height: 100px;
+}
+
+.commentTop {
+  height: 30px;
+}
+
+#currentComments {
+  color: gray;
+  display: none;
+}
+
+.topFriend {
+  background-color: lightgray;
+  padding: 0 8 0 8;
+  width: 90px;
+  height: 200px;
+  float:left;
+}
+
+.image {
+  background-color: gray;
+  padding: 0 8 0 8;
+  width: 90px;
+  height: 150px;
+  float:left;
+}
+
+#friendid {
+  width: 400px;
+}
+
+#main {
+  height: 100%;
+  width: 900px;
+}
+
+#wrapper {
+  height: 95%;
+  max-width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}

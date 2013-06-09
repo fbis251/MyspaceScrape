@@ -1,0 +1,28 @@
+TODO MS v3
+
+JQuery
+  Pics/Info
+    Parse data upon request
+      Possibly parse x (50?) pics at a time to reduce DOM calls
+  Wall to wall
+    Recent comments only (first page)
+    Similar to Facebook convo view
+
+DB
+  Use MySQL vs Cookies
+  Store user info
+    MS login information
+    Options
+    cURL cookiejar
+    Tracked/Favorite profiles?
+
+msDetect
+  Match type on multiple criteria
+    Use msProfile children
+    Check for non-null cases/counts of (If applicable):
+      Default
+      Name
+      Status
+      Last Login
+      Location
+      

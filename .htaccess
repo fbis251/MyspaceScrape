@@ -1,0 +1,17 @@
+RewriteEngine on
+
+# We're gonna handle cache and compression with PHP
+#RewriteRule ^style.css$ style.css.php [L]
+#RewriteRule ^favicon.ico$ favicon.ico.php [L]
+#RewriteRule ^js/javascript.js$ js/javascript.php [L]
+
+# Now we figure out which scripts to load with pretty URLs
+RewriteRule ^commentsrss/([^/\.]+)/?$ rss.php?id=$1 [L]
+RewriteRule ^rss/([^/\.]+)/?$ rss.php?id=$1 [L]
+RewriteRule ^rss/([^/\.]+)/([^/\.]+)/?$ rss.php?id=$1&who=$2 [L]
+RewriteRule ^l/([^/\.]+)/?$ json.php?id=$1 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ index.php?id=$1&table=$1&ts=$2 [L]
+RewriteRule ^([^/\.]+)/?$ index.php?id=$1 [L]
+
+# We don't need ETags since we're using other caching mechanisms
+FileETag none
